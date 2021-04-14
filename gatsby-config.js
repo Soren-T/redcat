@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `campy trails`,
-    description: `Stripe storefront starter for Gatsby`,
-    author: `Brock McElroy <brxck.dev>`,
+    title: `The Red Cat Studio`,
+    description: `Online store to buy all your favorite Red Cat gear`,
+    author: `Soren Thompson`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

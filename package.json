@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-stripe",
-  "private": true,
-  "description": "A minimal starter to create a storefront with Stripe & Gatsby.",
-  "version": "0.3.0",
-  "author": "Brock McElroy (https://brxck.dev)",
+  "name": "redcat",
+  "private": false,
+  "description": "ecommerce store for theredcat.studio",
+  "version": "1.0.0",
+  "author": "Soren Thompson",
   "dependencies": {
     "@stripe/stripe-js": "^1.13.2",
     "gatsby": "^3.1.2",
@@ -37,10 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brxck/gatsby-starter-stripe"
-  },
-  "bugs": {
-    "url": "https://github.com/brxck/gatsby-starter-stripe/issues"
+    "url": "https://github.com/Soren-T/redcat"
   },
   "devDependencies": {
     "babel-preset-gatsby": "^1.1.0",

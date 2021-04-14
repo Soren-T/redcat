@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "../hiq.css"
+import "./hiq.css"
 import Header from "../Header"
 import StripeProductsProvider from "./StripeProductsProvider"
 

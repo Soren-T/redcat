@@ -5,14 +5,14 @@ import PropTypes from "prop-types"
 export const IdentityContext = React.createContext()
 
 export default function IdentityProvider(props) {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     netlifyIdentity.init({ container: "#___gatsby" })
     netlifyIdentity.on("login", user => setUser(user))
     netlifyIdentity.on("logout", user => setUser(null))
     setUser(netlifyIdentity.currentUser())
-  }, [])
+  }, []);
 
   return (
     <IdentityContext.Provider
@@ -23,7 +23,7 @@ export default function IdentityProvider(props) {
     >
       {props.children}
     </IdentityContext.Provider>
-  )
+  );
 }
 
 IdentityProvider.propTypes = {
@@ -31,7 +31,8 @@ IdentityProvider.propTypes = {
 }
 
 export function Authenticate(props) {
-  const { user, login } = useContext(IdentityContext)
+  const { user, login } = useContext(IdentityContext);
+  console.log('user', user);
   // eslint-disable-next-line eqeqeq
   if (!user && process.env.GATSBY_DEMO != "true") {
     return (

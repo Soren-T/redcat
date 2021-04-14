@@ -10,21 +10,11 @@ const StoreLayout = ({ children }) => {
   return (
     <ProductsProvider>
       <CartProvider>
-        <Header cart></Header>
+        <Header cart />
 
         <main className={css.main}>{children}</main>
 
         <footer style={{ textAlign: "center", margin: "2rem 0" }}>
-          <span>
-            Fork
-            {` `}
-            <a href="https://github.com/brxck/gatsby-starter-stripe">
-              gatsby-starter-stripe
-            </a>
-            {` `}
-            on GitHub!{" "}
-          </span>
-
           <div className={css.footerIcons}>
             <a href="https://github.com/brxck/gatsby-starter-stripe">
               <img

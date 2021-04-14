@@ -15,7 +15,7 @@ const Index = () => {
       <Layout>
         <Authenticate>
           <SEO title="Admin"></SEO>
-          <Router basepath="/admin">
+          <Router basepath="/login">
             <ProductPage path="/products/create" create />
             <ProductPage path="/products/:productId" />
             <ProductList path="/" />
