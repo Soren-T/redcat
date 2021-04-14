@@ -17,14 +17,13 @@ module.exports.handler = async (event, context, callback) => {
 
   const updatedPrices = body.prices.map(async priceData => {
     const existingPrice = prices.data.find(p => p.id === priceData.id)
-    const { active, metadata, nickname, unit_amount } = priceData
+    const { active, metadata, unit_amount } = priceData
     if (existingPrice) {
-      return stripe.prices.update(priceData.id, { active, metadata, nickname })
+      return stripe.prices.update(priceData.id, { active, metadata })
     } else {
       return stripe.prices.create({
         active,
         metadata,
-        nickname,
         unit_amount,
         currency: "usd",
         product: productId,

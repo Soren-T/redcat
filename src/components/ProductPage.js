@@ -60,7 +60,7 @@ const ProductPage = ({ productId }) => {
               {product.prices.map((price, i) => {
                 return (
                   <option value={i} key={price.id}>
-                    {price.nickname} &ndash; ${price.unit_amount / 100}
+                    ${price.unit_amount / 100}
                   </option>
                 )
               })}

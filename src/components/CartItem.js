@@ -28,7 +28,6 @@ const CartItem = ({ price, quantity }) => {
           <div>
             <strong>{price.product.name}</strong>
           </div>
-          <div>{price.nickname}</div>
         </Link>
         <div className={css.quantity}>
           <span>

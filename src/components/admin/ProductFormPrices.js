@@ -21,15 +21,6 @@ function ProductFormPrices({ prices, setPrices }) {
       <tbody>
         {prices.map((price, i) => (
           <tr key={price.id || i}>
-            <td>
-              <input
-                className="mb-2 form-input"
-                name="nickname"
-                type="text"
-                value={price.nickname}
-                onChange={onChange(i)}
-              />
-            </td>
             <td style={{ width: "30%" }}>
               <input
                 className="mb-2 form-input"
