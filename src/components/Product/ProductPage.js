@@ -2,8 +2,8 @@ import React, { useContext, useState } from "react"
 import PropTypes from "prop-types"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { ProductsContext } from "./ProductsProvider"
-import { CartContext } from "./CartProvider"
+import { ProductsContext } from "../Context/ProductsProvider"
+import { CartContext } from "../Context/CartProvider"
 import * as css from "./ProductPage.module.css"
 
 const ProductPage = ({ productId }) => {

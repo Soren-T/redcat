@@ -53,9 +53,9 @@ const CartProvider = ({ children }) => {
    * @returns {number}
    */
   function get(id) {
-    if (!contents.length) return 0
-    const cartItem = contents.find(item => item[0] === id)
-    return cartItem ? cartItem[1] : 0
+    if (!contents.length) return 0;
+    const cartItem = contents.find(item => item[0] === id);
+    return cartItem ? cartItem[1] : 0;
   }
 
   /**
@@ -67,16 +67,16 @@ const CartProvider = ({ children }) => {
    */
   function set(id, quantity) {
     if (!available(id, quantity)) return -1
-    const index = contents.findIndex(item => item[0] === id)
+    const index = contents.findIndex(item => item[0] === id);
     setContents(([...state]) => {
       if (index !== -1) {
-        state[index] = [id, quantity]
+        state[index] = [id, quantity];
       } else {
-        state.push([id, quantity])
+        state.push([id, quantity]);
       }
-      return state
+      return state;
     })
-    return quantity
+    return quantity;
   }
 
   /**

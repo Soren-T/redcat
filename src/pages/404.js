@@ -1,13 +1,13 @@
 import React from "react"
 
-import StoreLayout from "../components/StoreLayout"
+import StoreLayout from "../components/Layout/StoreLayout"
 import SEO from "../components/SEO"
 
 const NotFoundPage = () => (
   <StoreLayout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>PAGE NOT FOUND</h1>
+    <p>But you did fing Red Cat</p>
   </StoreLayout>
 )
 

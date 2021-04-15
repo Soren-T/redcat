@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import { CartContext } from "./CartProvider"
+import { CartContext } from "../Context/CartProvider"
 import * as css from "./CartItem.module.css"
 
 const CartItem = ({ price, quantity }) => {

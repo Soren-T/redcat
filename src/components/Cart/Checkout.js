@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { CartContext } from "./CartProvider"
+import { CartContext } from "../Context/CartProvider"
 import { loadStripe } from "@stripe/stripe-js"
 
 const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)

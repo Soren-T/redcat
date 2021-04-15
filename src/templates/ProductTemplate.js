@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import StoreLayout from "../components/StoreLayout"
-import ProductPage from "../components/ProductPage"
+import StoreLayout from "../components/Layout/StoreLayout"
+import ProductPage from "../components/Product/ProductPage"
 
 const ItemTemplate = ({ pageContext: { id } }) => {
   return (

@@ -1,13 +1,17 @@
-import React from "react"
+import React from "react";
 
-import StoreLayout from "../components/StoreLayout"
-import Products from "../components/Products"
-import SEO from "../components/SEO"
+import StoreLayout from "../components/Layout/StoreLayout";
+import Home from "../components/Home/Home";
+import SEO from "../components/SEO";
+
+import "typeface-roboto";
+import "../styles/index.scss";
+import "../styles/tailwind.css";
 
 const IndexPage = () => (
   <StoreLayout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Products></Products>
+    <SEO title="Home" keywords={[`wood working`, `life-style`, `cool`]} />
+    <Home />
   </StoreLayout>
 )
 

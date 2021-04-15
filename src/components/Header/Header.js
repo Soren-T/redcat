@@ -3,9 +3,9 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import * as css from "./Header.module.css"
-import Cart from "./Cart"
+import Cart from "../Cart/Cart"
 
-function Header(props) {
+const Header = ({ cart }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -22,8 +22,7 @@ function Header(props) {
           {data.site.siteMetadata.title}
         </Link>
         <div className={css.links}>
-          <Link to="/login">Login</Link>
-          {props.cart && <Cart />}
+          {cart && <Cart />}
         </div>
       </nav>
     </header>
